@@ -1,0 +1,23 @@
+{
+  "name": "awesomesite",
+  "version": "1.0.0",
+  "description": "Awesome website",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "*",
+    "body-parser": "*",
+    "express-validator": "*",
+    "express-session": "*",
+    "mongoose": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "Rohini",
+  "license": "ISC"
+}

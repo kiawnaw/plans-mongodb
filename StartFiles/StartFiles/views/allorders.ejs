@@ -1,0 +1,42 @@
+<%- include('layouts/header'); -%>
+<body>
+    <%- include('layouts/nav'); -%>
+    <section>
+       <table>
+           <thead>
+                <tr>
+                   <th>Name</th>
+                   <th>Phone</th>
+                   <th>Plan1</th>
+                   <th>Plan2</th>
+                   <th>Plan3</th>
+                   <th>Subtotal</th>
+                   <th>Discount</th>
+                   <th>Tax</th>
+                   <th>Total</th>
+                 </tr>
+           </thead>
+           <tbody>
+               <%
+                    for(order of orders){
+               %>
+            <tr>
+                <td><%= order.name %></td>
+                <td><%= order.phone %></td>
+                <td><%= order.plan1 %></td>
+                <td><%= order.plan2 %></td>
+                <td><%= order.plan3 %></td>
+                <td>$<%= order.subTotal %></td>
+                <td>$<%= order.discount %></td>
+                <td>$<%= order.tax.toFixed(2) %></td>
+                <td>$<%= order.total.toFixed(2) %></td>
+              </tr>
+              <%
+            }
+            %>
+           </tbody>
+       </table> 
+    </section>
+
+</body>
+<%- include('layouts/footer'); -%>
